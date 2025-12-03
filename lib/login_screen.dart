@@ -7,13 +7,12 @@ class LoginScreen extends StatelessWidget {
   Widget build(BuildContext context) {
 
     return Scaffold(
-      body: Center(child: Text("Hello, Flutter online 97",
-      style: TextStyle(
-        color: Colors.amber,
-        fontSize: 40,
-        fontWeight: FontWeight.bold
+      body: Stack(
+        children: [
+          // layer1
+          Image.asset("assets/images/login_background.png"),
+        ],
       ),
-      )),
     );
   }
 }
