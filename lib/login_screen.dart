@@ -15,7 +15,7 @@ class LoginScreen extends StatelessWidget {
           Image.asset("assets/images/login_background.png",width: double.infinity,fit: BoxFit.cover,),
           //layer2
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 42.0),
+            padding: const EdgeInsets.symmetric(horizontal: 42.0,vertical: 42),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.end,
 
@@ -35,10 +35,39 @@ class LoginScreen extends StatelessWidget {
 
                   style: TextStyle(
                       fontSize: 14,
-                      color: Colors.grey,
+                      color: Color.fromRGBO(169, 169, 169, 1),
                       fontWeight: FontWeight.w400
                   ),
+                ),
+                SizedBox(
+                  height: 16,
+                ),
+                Container(
+                  width: 312,
+                  height: 54,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(10)
+                  ),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Image.asset("assets/logos/google_logo.png"),
+                      SizedBox(
+                        width: 8,
+                      ),
+                      Text('Continue With Google',
+                      style: TextStyle(
+                        color: Color.fromRGBO(0, 0, 0, 0.54),
+                        fontWeight: FontWeight.w500,
+                        fontSize: 20
+                      ),
+                      )
+
+                    ],
+                  ),
                 )
+
               ],
             ),
           ),
